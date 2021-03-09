@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ShadowDom Login Form Example</title>
+
+      <style>
+      body {
+            margin: 0;
+            padding: 0;
+            background: url(https://picsum.photos/2500/1500?image=1041);
+            background-size: cover;
+            font-family: sans-serif;
+      }
+      </style>
+</head>
+
+<body>
+      <login-form></login-form>
+      <script src="./js/loginComponent.js"></script>
+      <script src="./js/inputComponent.js"></script>
+</body>
+
+<script>
+customElements.define('login-form', LoginComponent);
+customElements.define('input-form', InputComponent);
+</script>
+
+</html>
